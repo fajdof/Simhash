@@ -13,17 +13,17 @@ public class SimFileReader {
 	private BufferedReader buffy;
 	private int N;
 	
-//	public SimFileReader(String file) {
-//		try {
-//			buffy = new BufferedReader (new FileReader(file));
-//		} catch (FileNotFoundException e) {
-//			e.printStackTrace();
-//		}
-//	}
-	
-	public SimFileReader(InputStream in) {
-		buffy = new BufferedReader (new InputStreamReader(System.in));
+	public SimFileReader(String file) {
+		try {
+			buffy = new BufferedReader (new FileReader(file));
+		} catch (FileNotFoundException e) {
+			e.printStackTrace();
+		}
 	}
+	
+	//public SimFileReader(InputStream in) {
+		//buffy = new BufferedReader (new InputStreamReader(in));
+	//}
 	
 	public List<String> readFile() {
 		List<String> lista = new ArrayList<String>();

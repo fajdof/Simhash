@@ -4,7 +4,7 @@ public class Hasher {
 	
 	public Hasher() {
 	}
-	
+	// simhash algoritam
 	public int[] retSim(String redak) {
 		String[] komadi = redak.trim().split(" ");
 		int[] sh = new int[128];
